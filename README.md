@@ -68,7 +68,8 @@ Dieser Error sagt Dir, dass der Port **3306** bereits verwendet wird.
 Dieser Error sagt Dir, dass der Port **80** bereits verwendet wird.  
 
 
-#### LÖSUNG
+  
+  #### LÖSUNG
 Damit das Problem nicht mehr eintritt, musst Du die **Ports wieder freigeben**:
 1. Nachschauen, welcher Service auf den Port benutzt. Folgende Zeile ins Terminal kopieren und **PORT** durch die Portnummer ersetzen.
 ```bash
