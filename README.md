@@ -49,7 +49,7 @@ docker stop <containerId1> <containerId2>
 ./vendor/bin/sail up
 ```
 
-### Fehlerbehebungen
+### 5. Fehlerbehebungen
 
 #### Ports besetzt
 Wenn man mit Docker arbeitet, kann es vorkommen, dass gewisse Ports (oft MySQL oder Apache) bereits von anderer Software besetzt ist.
@@ -68,8 +68,7 @@ Dieser Error sagt Dir, dass der Port **3306** bereits verwendet wird.
 Dieser Error sagt Dir, dass der Port **80** bereits verwendet wird.  
 
 
-  
-  #### LÖSUNG
+#### LÖSUNG
 Damit das Problem nicht mehr eintritt, musst Du die **Ports wieder freigeben**:
 1. Nachschauen, welcher Service auf den Port benutzt. Folgende Zeile ins Terminal kopieren und **PORT** durch die Portnummer ersetzen.
 ```bash
