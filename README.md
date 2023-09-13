@@ -6,7 +6,7 @@ Laravel Mini Twitter Vorlage
 
 ## Installation
 
-### Framework herunterladen und in VS-Code öffnen
+### 1. Framework herunterladen und in VS-Code öffnen
 1. im Terminal mit dem Befehl **cd** in den **Documents** Ordner navigieren
 2. folgenden Befehl kopieren, einfügen und Enter drücken
 
@@ -24,13 +24,13 @@ cd mini-twitter
 code .
 ```
 
-### VS Code vorbereiten
+### 2. VS Code vorbereiten
 Zu den Extensions navigieren (Ctrl + Shift + X)
 1. Live Server Extension **deaktivieren**
 2. PHP Server Extension **deaktivieren**
 
 
-### Docker vorbereiten
+### 3. Docker vorbereiten
 1. In VS-Code zu **Terminal - New Terminal** navigieren
 2. Folgenden Befehl eingeben, um laufende Prozesse anzuschauen (docker process status)
 ```bash
@@ -43,34 +43,46 @@ docker stop <containerId1> <containerId2>
 
 
 
-### Projekt aufstarten
+### 4. Projekt aufstarten
 1. Im VS-Code Terminal öffnen
 2. Folgenden Befehl kopieren und einfügen
 ```bash
 ./vendor/bin/sail up
 ```
 
+### Fehlerbehebungen
 
-### Zusatzoptionen
-#### Sail als Alias in .bashrc speichern
-Das .bashrc File ist ein File
+#### Ports besetzt
+Wenn man mit Docker arbeitet, kann es vorkommen, dass gewisse Ports (oft MySQL oder Apache) bereits von anderer Software besetzt ist.
+Damit diese Ports von Docker verwendet werden können, müssen sie von Dir als Entwickler freigegeben werden.
+
+Error starting userland proxy: listen tcp4 0.0.0.0:3306: bind: address already in use
+
+![#f03c15] Test
+
+
+
+
+## Zusatzoptionen
+### Sail als Alias in .bashrc speichern
+Die .bashrc-Datei ist eine Skriptdatei, die ausgeführt wird, wenn sich ein Benutzer anmeldet. Die Datei selbst enthält eine Reihe von Konfigurationen für Terminalsessions.
 
 1. Befehl kopieren und eingeben - es öffnet sich das .bashrc-File
 ```bash
 code ~/.bashrc
 ```
-2. Nach unten scrollen und folgenden Befehl in das File kopieren
+2. Nach unten scrollen und folgende Zeilen in das File kopieren. Damit kann man von überall im Terminal mit der Eingabe von **sail** das von Laravel zur Verfügung gestellte Skript ausführen.
 ```bash
 alias sail='bash vendor/bin/sail'
 ```
-3. **Ctrl + x** drücken dann mit **y** bestätigen
-4. Folgenden Befehl eingeben und mit Enter bestätigen
+3. File speichern und schliessen
+4. Folgenden Befehl im Terminal eingeben und mit Enter bestätigen. Damit werden die Änderungen im .bashrc File übernommen.
 ```bash
 source ~/. bashrc
 ```
 
 
-### Fehlerbehebung
+
 
 
 
