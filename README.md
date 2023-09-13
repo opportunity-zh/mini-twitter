@@ -63,7 +63,7 @@ Damit diese Ports von Docker verwendet werden können, müssen sie von Dir als E
 Dieser Error sagt Dir, dass der Port **3306** bereits verwendet wird.
 
 
-**LÖSUNG**
+#### LÖSUNG
 Damit das Problem nicht mehr eintritt, musst Du die Ports freigeben. Das machst Du folgendermassen:
 1. Nachschauen, welcher Service auf den Port benutzt. Folgende Zeile ins Terminal kopieren - **PORT** durch die Portnummer ersetzen.
 ```bash
