@@ -25,6 +25,7 @@ code .
 ```
 
 ### VS Code vorbereiten
+Zu den Extensions navigieren (Ctrl + Shift + X)
 1. Live Server Extension **deaktivieren**
 2. PHP Server Extension **deaktivieren**
 
