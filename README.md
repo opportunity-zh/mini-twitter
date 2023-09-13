@@ -41,7 +41,7 @@ docker ps
 docker stop <containerId1> <containerId2>
 ```
 
-### 4. Projekt mit PHPMyAdmin erweitern
+### 4. Projekt um PHP My Admin erweitern
 1. Im Projekt das File **docker-compose.yml** öffnen
 2. Folgende Zeilen hinzufügen unter **selenium** auf derselben Höhe
 ```yaml
@@ -128,12 +128,14 @@ source ~/. bashrc
 
 
 
-## PHP My Admin öffnen
-PHP My Admin ist ein GUI für die Datenbank. Es hilft Dir dabei, in der Datenbank gespeicherte Daten visuell darzustellen.
-Dazu kopiere folgende Zeile in den Browser:
+## PHP My Admin
+PHP My Admin ist ein GUI für die Datenbank. Es zeigt Dir gespeicherte Daten visuell an.
+
+1. Öffne PHP My Admin im Browser, indem Du folgende Zeilen in die URL-Bar kopierst
 ```bash
 http://0.0.0.0:8080/
 ```
+2. Logge Dich ein. Du findest die Zugangsdaten in Deiner **.env** Datei unter **DB_USERNAME** und **DB_PASSWORD**
 
 
 
