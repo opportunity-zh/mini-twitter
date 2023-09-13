@@ -41,6 +41,26 @@ docker ps
 docker stop <containerId1> <containerId2>
 ```
 
+### 4. Projekt mit PHPMyAdmin erweitern
+1. Im Projekt das File **docker-compose.yml** öffnen
+2. Folgende Zeilen hinzufügen
+```yaml
+phpmyadmin:
+    image: phpmyadmin/phpmyadmin:5
+    ports:
+        - 8080:80
+    links:
+        - mysql
+    environment:
+        PMA_HOST: mysql
+        PMA_PORT: 3306
+    depends_on:
+        mysql:
+            condition: service_healthy
+    networks:
+        - sail
+```
+
 
 ### 4. Projekt aufstarten
 1. Im VS-Code Terminal öffnen
