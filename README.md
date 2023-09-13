@@ -69,6 +69,12 @@ phpmyadmin:
 ./vendor/bin/sail up
 ```
 
+### 5. WebApp in Browser öffnen
+Kopiere folgende Zeile in die URL-Bar im Browser
+```bash
+http://0.0.0.0
+```
+
 ### 5. Fehlerbehebungen
 
 #### Ports besetzt
@@ -119,6 +125,15 @@ alias sail='bash vendor/bin/sail'
 source ~/. bashrc
 ```
 
+
+
+
+## PHP My Admin öffnen
+PHP My Admin ist ein GUI für die Datenbank. Es hilft Dir dabei, in der Datenbank gespeicherte Daten visuell darzustellen.
+Dazu kopiere folgende Zeile in den Browser:
+```bash
+http://0.0.0.0:8080/
+```
 
 
 
