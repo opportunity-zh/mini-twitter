@@ -42,7 +42,6 @@ docker stop <containerId1> <containerId2>
 ```
 
 
-
 ### 4. Projekt aufstarten
 1. Im VS-Code Terminal öffnen
 2. Folgenden Befehl kopieren und einfügen
@@ -63,15 +62,21 @@ Damit diese Ports von Docker verwendet werden können, müssen sie von Dir als E
 Dieser Error sagt Dir, dass der Port **3306** bereits verwendet wird.
 
 
+```diff
+! Error starting userland proxy: listen tcp4 0.0.0.0:80: bind: address already in use
+```
+Dieser Error sagt Dir, dass der Port **80** bereits verwendet wird.
+
+
 #### LÖSUNG
-Damit das Problem nicht mehr eintritt, musst Du die Ports freigeben. Das machst Du folgendermassen:
-1. Nachschauen, welcher Service auf den Port benutzt. Folgende Zeile ins Terminal kopieren - **PORT** durch die Portnummer ersetzen.
+Damit das Problem nicht mehr eintritt, musst Du die **Ports wieder freigeben**:
+1. Nachschauen, welcher Service auf den Port benutzt. Folgende Zeile ins Terminal kopieren und **PORT** durch die Portnummer ersetzen.
 ```bash
 sudo netstat -laputen | grep ':PORT'
 ```
-2. Dies gibt Dir eine "Tabelle" von Services aus, die den Port verwenden. An letzter Stelle steht dann etwas ähnliches wie: **1010/mariadbd**
+2. Dies gibt Dir eine "Tabelle" von Services aus, die den Port verwenden. An letzter Stelle steht dann etwas wie: **1010/mariadbd**
 3. Dies ist der Service inkl. seiner **PROCESS-ID** (in diesem Fall 1010), welcher den Port besetzt
-4. Diesen Service musst Du nun stoppen. Das machst Du mit folgendem Befehl:
+4. Diesen Service musst Du nun stoppen. Das machst Du mit folgendem Befehl (PROCESS-ID durch die Prozess ID ersetzen)
 ```bash
 sudo kill PROCESS-ID
 ```
