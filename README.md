@@ -41,7 +41,39 @@ docker ps
 docker stop <containerId1> <containerId2>
 ```
 
-4. Folgenden Befehl kopieren und einfügen
+
+
+### Projekt aufstarten
+1. Im VS-Code Terminal öffnen
+2. Folgenden Befehl kopieren und einfügen
 ```bash
 ./vendor/bin/sail up
 ```
+
+
+### Zusatzoptionen
+#### Sail als Alias in .bashrc speichern
+Das .bashrc File ist ein File
+
+1. Befehl kopieren und eingeben - es öffnet sich das .bashrc-File
+```bash
+code ~/.bashrc
+```
+2. Nach unten scrollen und folgenden Befehl in das File kopieren
+```bash
+alias sail='bash vendor/bin/sail'
+```
+3. **Ctrl + x** drücken dann mit **y** bestätigen
+4. Folgenden Befehl eingeben und mit Enter bestätigen
+```bash
+source ~/. bashrc
+```
+
+
+### Fehlerbehebung
+
+
+
+
+
+
