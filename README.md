@@ -56,14 +56,25 @@ docker stop <containerId1> <containerId2>
 Wenn man mit Docker arbeitet, kann es vorkommen, dass gewisse Ports (oft MySQL oder Apache) bereits von anderer Software besetzt ist.
 Damit diese Ports von Docker verwendet werden können, müssen sie von Dir als Entwickler freigegeben werden.
 
-Error starting userland proxy: listen tcp4 0.0.0.0:3306: bind: address already in use
 
 ```diff
-- text in red
+! Error starting userland proxy: listen tcp4 0.0.0.0:3306: bind: address already in use
 ```
+Dieser Error sagt Dir, dass der Port **3306** bereits verwendet wird.
 
 
-
+**LÖSUNG**
+Damit das Problem nicht mehr eintritt, musst Du die Ports freigeben. Das machst Du folgendermassen:
+1. Nachschauen, welcher Service auf den Port benutzt. Folgende Zeile ins Terminal kopieren - **PORT** durch die Portnummer ersetzen.
+```bash
+sudo netstat -laputen | grep ':PORT'
+```
+2. Dies gibt Dir eine "Tabelle" von Services aus, die den Port verwenden. An letzter Stelle steht dann etwas ähnliches wie: **1010/mariadbd**
+3. Dies ist der Service inkl. seiner **PROCESS-ID** (in diesem Fall 1010), welcher den Port besetzt
+4. Diesen Service musst Du nun stoppen. Das machst Du mit folgendem Befehl:
+```bash
+sudo kill PROCESS-ID
+```
 
 ## Zusatzoptionen
 ### Sail als Alias in .bashrc speichern
