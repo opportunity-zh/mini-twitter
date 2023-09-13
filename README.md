@@ -43,7 +43,7 @@ docker stop <containerId1> <containerId2>
 
 ### 4. Projekt mit PHPMyAdmin erweitern
 1. Im Projekt das File **docker-compose.yml** öffnen
-2. Folgende Zeilen hinzufügen
+2. Folgende Zeilen hinzufügen unter **selenium** auf derselben Höhe
 ```yaml
 phpmyadmin:
     image: phpmyadmin/phpmyadmin:5
