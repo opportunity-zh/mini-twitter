@@ -65,7 +65,7 @@ Dieser Error sagt Dir, dass der Port **3306** bereits verwendet wird.
 ```diff
 ! Error starting userland proxy: listen tcp4 0.0.0.0:80: bind: address already in use
 ```
-Dieser Error sagt Dir, dass der Port **80** bereits verwendet wird.
+Dieser Error sagt Dir, dass der Port **80** bereits verwendet wird.  
 
 
 #### LÖSUNG
