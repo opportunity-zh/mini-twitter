@@ -11,7 +11,15 @@ Laravel Mini Twitter Vorlage
 2. folgenden Befehl kopieren, einfügen und Enter drücken
 
 ```bash
-curl -s "https://laravel.build/example-app" | bash
+curl -s "https://laravel.build/mini-twitter" | bash
 ```
 
+3. In den Projekt-Ordner navigieren
+```bash
+cd mini-twitter
+```
 
+4. Folgenden Befehl kopieren und einfügen
+```bash
+./vendor/bin/sail up
+```
