@@ -1,7 +1,8 @@
 # Mini Twitter
 Laravel Mini Twitter Vorlage
 
-[https://laravel.com/docs/10.x/sail](https://laravel.com/docs/10.x/installation#getting-started-on-macos)
+[Dokumentation]([Dokumentation](https://laravel.com/docs))
+[Installationsanleitung](https://laravel.com/docs/10.x#getting-started-on-linux)
 
 
 ## Installation
@@ -106,6 +107,19 @@ sudo netstat -laputen | grep ':PORT'
 ```bash
 sudo kill PROCESS-ID
 ```
+
+#### Found orphan containers
+Du erhältst den Fehler "Found orphan containers", weil mit dem Befehl docker-compose wurden container gefunden, die zu einem anderen Projekt mit demselben Namen gehören.
+
+```diff
+! WARN[0000] Found orphan containers ([first-laravel-phpmyadmin-1]) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up. 
+```
+#### LÖSUNG
+Kopiere folgenden Befehl in Dein Terminal und drück Enter
+```bash
+./vendor/bin/sail down --remove-orphans
+```
+
 
 ## Zusatzoptionen
 ### Sail als Alias in .bashrc speichern
