@@ -9,7 +9,7 @@ Laravel Mini Twitter Vorlage
 
 ### 1. Framework herunterladen und in VS-Code öffnen
 1. im Terminal mit dem Befehl **cd** in den **Documents** Ordner navigieren
-2. folgenden Befehl kopieren, einfügen und Enter drücken
+2. folgenden Befehl kopieren, einfügen und mit Enter bestätigen
 
 ```bash
 curl -s "https://laravel.build/mini-twitter" | bash
@@ -124,7 +124,7 @@ Du erhältst den Fehler "Found orphan containers", weil mit dem Befehl docker-co
 ! WARN[0000] Found orphan containers ([first-laravel-phpmyadmin-1]) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up. 
 ```
 #### LÖSUNG
-Kopiere folgenden Befehl in Dein Terminal und drück Enter
+Kopiere folgenden Befehl in Dein Terminal
 ```bash
 ./vendor/bin/sail down --remove-orphans
 ```
