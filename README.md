@@ -157,6 +157,15 @@ Mit folgendem Befehl, kannst Du Dir die Liste aller möglichen Befehle / Hilfest
 sail artisan list
 ```
 
+## Model
+Das Model ist die Abbildung eines einzelnen Tweets in der Datenbank **tweets** als PHP-Klasse / Objekt.
+
+Mit folgendem Befehl kannst Du ein Model erstellen:
+```bash
+sail make:model Tweet
+```
+
+[Mehr Infos](https://laravel.com/docs/eloquent#generating-model-classes)
 
 
 
