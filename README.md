@@ -158,7 +158,7 @@ sail artisan list
 ```
 
 ## Model
-Das Model ist die Abbildung eines einzelnen Tweets in der Datenbank **tweets** als PHP-Klasse / Objekt.
+Das Model ist die Abbildung eines einzelnen Tweets in der Datenbank als PHP-Klasse / Objekt.
 
 Mit folgendem Befehl kannst Du ein Model erstellen:
 ```bash
