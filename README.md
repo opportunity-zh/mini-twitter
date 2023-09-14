@@ -149,7 +149,14 @@ source ~/. bashrc
 ```
 
 ## Artisan Console
-Laravel hilft Dir als Entwickler in vielen Bereichen. Es bietet Dir eine CLI (Commanline Interface), damit Du gewisse Tasks schneller und einfacher ausführen kannst. Beispielsweise Projektdateien erzeugen, die Datenbank aufzubauen, usw.
+Laravel hilft Dir als Entwickler in vielen Bereichen. Es bietet Dir eine CLI (Commanline Interface), damit Du gewisse Tasks schneller und einfacher ausführen kannst. Beispielsweise Projektdateien erzeugen, die Datenbank aufzubauen, usw.  
+
+Mit folgendem Befehl, kannst Du Dir die Liste aller möglichen Befehle / Hilfestellungen, die Dir die Artisan Console zur Verfügung stellt, anzeigen lassen:
+
+```bash
+sail artisan list
+```
+
 
 
 
