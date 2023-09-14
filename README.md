@@ -148,6 +148,10 @@ alias sail='bash vendor/bin/sail'
 source ~/. bashrc
 ```
 
+## Artisan Console
+Laravel hilft Dir als Entwickler in vielen Bereichen. Es bietet Dir eine CLI (Commanline Interface), damit Du gewisse Tasks schneller und einfacher ausführen kannst. Beispielsweise Projektdateien erzeugen, die Datenbank aufzubauen, usw.
+
+
 
 ## PHP My Admin
 PHP My Admin ist ein GUI für die Datenbank. Es zeigt Dir gespeicherte Daten visuell an.
@@ -157,6 +161,10 @@ PHP My Admin ist ein GUI für die Datenbank. Es zeigt Dir gespeicherte Daten vis
 localhost:8080/
 ```
 2. Logge Dich ein. Du findest die Zugangsdaten in Deiner **.env** Datei unter **DB_USERNAME** und **DB_PASSWORD**
+
+
+
+
 
 
 
