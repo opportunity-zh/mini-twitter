@@ -20,7 +20,7 @@ curl -s "https://laravel.build/mini-twitter" | bash
 cd mini-twitter
 ```
 
-4. Projekt öffnen
+4. Projekt öffnen und Struktur anschauen
 ```bash
 code .
 ```
