@@ -2,7 +2,7 @@
 Laravel Mini Twitter Vorlage
 
 [Dokumentation](https://laravel.com/docs)  
-[Installationsanleitung](https://laravel.com/docs/10.x#getting-started-on-linux)
+[Installationsanleitung](https://laravel.com/docs/#getting-started-on-linux)
 
 
 ## Installation
@@ -78,6 +78,15 @@ localhost
 
 ### 5. Fehlerbehebungen
 
+#### Docker daemon läuft nicht
+Docker wurde nicht aufgestartet. Dann folgenden Befehl im Terminal eingeben
+
+#### LÖSUNG
+```bash
+sudo systemctl start docker
+```
+
+
 #### Ports besetzt
 Wenn man mit Docker arbeitet, kann es vorkommen, dass gewisse Ports (oft MySQL oder Apache) bereits von anderer Software besetzt ist.
 Damit diese Ports von Docker verwendet werden können, müssen sie von Dir als Entwickler freigegeben werden.
@@ -138,8 +147,6 @@ alias sail='bash vendor/bin/sail'
 ```bash
 source ~/. bashrc
 ```
-
-
 
 
 ## PHP My Admin
