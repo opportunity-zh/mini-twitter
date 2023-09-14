@@ -1,7 +1,7 @@
 # Mini Twitter
 Laravel Mini Twitter Vorlage
 
-[Dokumentation]([Dokumentation](https://laravel.com/docs))
+[Dokumentation](https://laravel.com/docs)
 [Installationsanleitung](https://laravel.com/docs/10.x#getting-started-on-linux)
 
 
