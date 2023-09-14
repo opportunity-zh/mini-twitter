@@ -72,7 +72,7 @@ phpmyadmin:
 ### 5. WebApp in Browser öffnen
 Kopiere folgende Zeile in die URL-Bar im Browser
 ```bash
-http://0.0.0.0
+localhost
 ```
 
 ### 5. Fehlerbehebungen
@@ -133,7 +133,7 @@ PHP My Admin ist ein GUI für die Datenbank. Es zeigt Dir gespeicherte Daten vis
 
 1. Öffne PHP My Admin im Browser, indem Du folgende Zeilen in die URL-Bar kopierst
 ```bash
-http://0.0.0.0:8080/
+localhost:8080/
 ```
 2. Logge Dich ein. Du findest die Zugangsdaten in Deiner **.env** Datei unter **DB_USERNAME** und **DB_PASSWORD**
 
