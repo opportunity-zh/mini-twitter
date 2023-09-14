@@ -1,9 +1,9 @@
 # Mini Twitter
-Laravel Mini Twitter Vorlage
+Laravel Mini Twitter Vorlage, zum vereinfachten Einstieg ins Projekt.
 
 [Dokumentation](https://laravel.com/docs)  
 [Installationsanleitung](https://laravel.com/docs/#getting-started-on-linux)
-
+[Laravel-Bootcamp](https://bootcamp.laravel.com/)
 
 ## Installation
 
