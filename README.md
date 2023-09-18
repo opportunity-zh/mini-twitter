@@ -41,6 +41,10 @@ docker ps
 ```bash
 docker stop <containerId1> <containerId2>
 ```
+4. Wenn Du alle Container auf einmal stoppen möchtest:
+```bash
+docker stop $(docker ps -a -q) 
+```
 
 ### 4. Projekt um PHP My Admin erweitern
 1. Im Projekt das File **docker-compose.yml** öffnen
