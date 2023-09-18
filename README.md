@@ -90,8 +90,8 @@ sudo systemctl start docker
 
 
 #### Ports besetzt
-Wenn man mit Docker arbeitet, kann es vorkommen, dass gewisse Ports (oft MySQL oder Apache) bereits von anderer Software besetzt ist.
-Damit diese Ports von Docker verwendet werden können, müssen sie von Dir als Entwickler freigegeben werden.
+Wenn man mit Docker arbeitet, kann es vorkommen, dass gewisse Ports bereits von anderer Software besetzt ist.
+Damit diese Ports von Docker verwendet werden können, müssen sie von Dir als Entwickler **freigegeben** werden.
 
 
 ```diff
@@ -106,7 +106,7 @@ Dieser Error sagt Dir, dass der Port **3306** bereits verwendet wird.
 Dieser Error sagt Dir, dass der Port **80** bereits verwendet wird.  
 
 
-#### LÖSUNG
+**LÖSUNG**
 Damit das Problem nicht mehr eintritt, musst Du die **Ports wieder freigeben**:
 1. Nachschauen, welcher Service auf den Port benutzt. Folgende Zeile ins Terminal kopieren und **PORT** durch die Portnummer ersetzen.
 ```bash
