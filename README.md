@@ -183,6 +183,19 @@ Mit folgendem Befehl kannst Du ein Model erstellen:
 sail make:model Tweet
 ```
 
+### Daten lesen
+Die Model Klasse bietet Dir verschiedene Möglichkeiten, die Daten aus der Daten zu holen. Du kannst entweder viele Daten oder eine einzelne Zeile aus der Datenbank laden. Hier findest Du mehr Informationen:  
+
+[Single Row](https://laravel.com/docs/10.x/eloquent#retrieving-single-models)  
+
+
+### Daten schreiben
+Auch hier bietet die von Laravel zur Verfügung gestellte Model Klasse einige Optionen an. Schau hier, was Du brauchst, um einen Eintrag in der Datenbank zu machen:  
+
+[Create Data](https://laravel.com/docs/10.x/eloquent#inserts)
+
+
+
 [Mehr Infos](https://laravel.com/docs/eloquent#generating-model-classes)
 
 
