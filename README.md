@@ -135,6 +135,17 @@ Kopiere folgenden Befehl in Dein Terminal
 ./vendor/bin/sail down --remove-orphans
 ```
 
+#### Probleme mit Ordner-Permission
+Wenn Dein Projektordner ein rotes Schlösschen besitzt, wurde dieser als root User erstellt und nicht als Deinen User. Du hast deshalb keine Berechtigung Änderungen darin vorzunehmen. Damit Du diese Berechtigung erhältst, muss Du folgendes machen:
+
+#### LÖSUNG
+1. Öffne das Terminal und navigiere in den Projektordner
+2. Gib folgende Zeile ein, um die Permissions zu ändern
+```bash
+sudo chmod 777 -R .
+```
+
+
 
 ## Zusatzoptionen
 ### Sail als Alias in .bashrc speichern
