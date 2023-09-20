@@ -48,7 +48,8 @@ docker stop $(docker ps -a -q)
 
 ### 4. Projekt um PHP My Admin erweitern
 1. Im Projekt das File **docker-compose.yml** öffnen
-2. Folgende Zeilen hinzufügen unter **selenium** auf derselben Höhe
+2. Folgende Zeilen hinzufügen unter **selenium**
+3. WICHTIG: phpmyadmin muss auf derselben Höhe sein wie selenium, die Zeilen müssen genau so eingerückt sein, wie hier zu sehen
 ```yaml
 phpmyadmin:
     image: phpmyadmin/phpmyadmin:5
