@@ -196,9 +196,6 @@ Auch hier bietet die von Laravel zur Verfügung gestellte Model Klasse einige Op
 
 
 
-[Mehr Infos](https://laravel.com/docs/eloquent#generating-model-classes)
-
-
 
 ## PHP My Admin
 PHP My Admin ist ein GUI für die Datenbank. Es zeigt Dir gespeicherte Daten visuell an.
