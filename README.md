@@ -151,7 +151,7 @@ alias sail='bash vendor/bin/sail'
 3. File speichern und schliessen
 4. Folgenden Befehl im Terminal eingeben und mit Enter bestätigen. Damit werden die Änderungen im .bashrc File übernommen.
 ```bash
-source ~/. bashrc
+source ~/.bashrc
 ```
 
 ## Artisan Console
