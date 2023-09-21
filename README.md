@@ -90,22 +90,22 @@ Vite ist ein **Buildtool**, dass Dir dabei hilft, mit Frontendservices zu arbeit
 ```bash
 npm install
 ```
-3. Um Deine CSS Datei zu verlinken, kannst Du folgende Directive in den **head-Tag** in Dein HTML File kopieren:  
+2. Um Deine CSS Datei zu verlinken, kannst Du folgende Directive in den **head-Tag** in Dein HTML File kopieren:  
 ```html
 @vite('resources/css/app.css')
 ```
-2. Öffne ein neues Terminalfenster
-3. Starte vite mit folgendem Befehl
+3. Öffne ein neues Terminalfenster
+4. Starte vite mit folgendem Befehl
 ```bash
 npm run dev
 ```
-4. Öffne die Datei /resources/css/app.css füge folgende Zeile hinzu
+5. Öffne die Datei /resources/css/app.css füge folgende Zeile hinzu
 ```css
 body{
     background-color: yellow;
 }
 ```
-5. Öffne Dein Projekt im Browser und schaue, ob der Hintergrund gelb ist
+6. Öffne Dein Projekt im Browser und schaue, ob der Hintergrund gelb ist
 
 
     
