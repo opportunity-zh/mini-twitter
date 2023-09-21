@@ -68,22 +68,32 @@ phpmyadmin:
 ```
 
 
-### 4. Projekt aufstarten
+### 5. Projekt aufstarten
 1. Im VS-Code Terminal öffnen
 2. Folgenden Befehl kopieren und einfügen
 ```bash
 ./vendor/bin/sail up
 ```
-3. Bei Error: Runterscrollen zum Punkt **5. Fehlerbehebungen**
+3. Bei Error: Runterscrollen zum Punkt **Fehlerbehebungen**
 
 
-### 5. WebApp in Browser öffnen
+### 6. WebApp in Browser öffnen
 Kopiere folgende Zeile in die URL-Bar im Browser
 ```bash
 localhost
 ```
 
-### 5. Fehlerbehebungen
+### 7. Vite verwenden
+Vite ist ein **Buildtool**, dass Dir dabei hilft, mit Frontendservices zu arbeiten. Laravel verwendet Vite automatisch, es muss nicht zusätzlich installiert werden.Mit vite können beispielsweise PostCSS oder SASS/SCSS nahtlos integriert werden.
+
+Um Deine CSS Datei zu verlinken, kannst Du folgende Directive nutzen:  
+```html
+@vite('resources/css/app.css')
+```
+
+
+
+## Fehlerbehebungen
 
 #### Docker daemon läuft nicht
 Docker wurde nicht aufgestartet. Dann folgenden Befehl im Terminal eingeben
@@ -146,10 +156,7 @@ Wenn Dein Projektordner ein rotes Schlösschen besitzt, wurde dieser als root Us
 sudo chmod 777 -R .
 ```
 
-
-
-## Zusatzoptionen
-### Sail als Alias in .bashrc speichern
+## Sail als Alias in .bashrc speichern
 Die .bashrc-Datei ist eine Skriptdatei, die ausgeführt wird, wenn sich ein Benutzer anmeldet. Die Datei selbst enthält eine Reihe von Konfigurationen für Terminalsessions.
 
 1. Befehl kopieren und eingeben - es öffnet sich das .bashrc-File
@@ -193,6 +200,15 @@ Die Model Klasse bietet Dir verschiedene Möglichkeiten, die Daten aus der Daten
 Auch hier bietet die von Laravel zur Verfügung gestellte Model Klasse einige Optionen an. Schau hier, was Du brauchst, um einen Eintrag in der Datenbank zu machen:  
 
 [Create Data](https://laravel.com/docs/10.x/eloquent#inserts)
+
+
+## Blade Template Engine
+Blade hilft Dir dabei, Daten, die vom Controller kommen einfacher darzustellen und in die View einzubetten.
+
+Dabei helfen die Blade Directives. De
+
+
+
 
 
 
