@@ -314,7 +314,8 @@ Setze das Design mit CSS um: [Figma-Link](https://www.figma.com/file/3AO216bDpII
 
 ## Users
 1. Erstelle einen User in der User Tabelle. Nutze dazu **sail artisan tinker**. Wie Tinker funktioniert kannst Du [hier](https://laravel.com/docs/10.x/artisan#usage) nachlesen
-2. Erstelle eine Migration, um der Tabelle **tweets** einen [Foreign Key](https://laravel.com/docs/10.x/migrations#foreign-key-constraints) zu der User-Tabelle hinzuzufügen
+2. Erstelle eine neue Migration, um der Tabelle **tweets** einen [Foreign Key](https://laravel.com/docs/10.x/migrations#foreign-key-constraints) zu der User-Tabelle hinzuzufügen
+3. Migriere die Migration
 
 
 ## Hashtags
