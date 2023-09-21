@@ -107,13 +107,19 @@ npm add -D sass
 5. Füge eine Datei hinzu und nenne diese **app.scss**
 6. Öffne die Datei **vite.config.js** und ersetze die Zeile **input** mit folgender Zeile
 ```js
-input: ['resources/css/app.css', 'resources/scss/app.scss', 'resources/js/app.js'],
+input: ['resources/scss/app.scss', 'resources/js/app.js'],
 ```
 7. Ändere das im head hinzugefügte Snippet in
 ```html
-@vite('resources/css/app.css', 'resources/scss/app.scss')
+@vite('resources/scss/app.scss')
 ```
-
+8. Starte Deinen Docker-Container (sail up)
+9. Öffne die Datei /resources/scss/app.scss und teste ob es funktioniert, indem Du folgende Zeile hinzufügst
+```css
+body{
+    background-color: yellow;
+}
+```
 
 
 Weitere Features findest Du [hier](https://vitejs.dev/guide/features.html)
