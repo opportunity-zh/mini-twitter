@@ -239,6 +239,16 @@ Mit folgendem Befehl, kannst Du Dir die Liste aller möglichen Befehle / Hilfest
 sail artisan list
 ```
 
+## PHP My Admin
+PHP My Admin ist ein GUI für die Datenbank. Es zeigt Dir gespeicherte Daten visuell an.
+
+1. Öffne PHP My Admin im Browser, indem Du folgende Zeilen in die URL-Bar kopierst
+```bash
+localhost:8080/
+```
+2. Logge Dich ein. Du findest die Zugangsdaten in Deiner **.env** Datei unter **DB_USERNAME** und **DB_PASSWORD**
+   
+
 ## Simple Debugging
 Es gibt verschiedene Möglichkeiten, Fehler in Deiner Applikation zu finden. Hier eine der einfachsten, die dem **console.log()** von Javascript entspricht:
 ```php
@@ -293,22 +303,14 @@ Alle Inputfelder müssen einen eindeutigen und uniquen Namen haben. Dieses Attri
 Der Button muss vom Type Submit sein, sonst wird das Formular nicht abgeschickt. Das kann mit **type="submit"** definiert werden.
 
 
-## PHP My Admin
-PHP My Admin ist ein GUI für die Datenbank. Es zeigt Dir gespeicherte Daten visuell an.
 
-1. Öffne PHP My Admin im Browser, indem Du folgende Zeilen in die URL-Bar kopierst
-```bash
-localhost:8080/
-```
-2. Logge Dich ein. Du findest die Zugangsdaten in Deiner **.env** Datei unter **DB_USERNAME** und **DB_PASSWORD**
 
 
 # Zusatzaufgaben
 
 ## Users
 1. Erstelle einen User in der User Tabelle. Nutze dazu **sail artisan tinker**. Wie Tinker funktioniert kannst Du [hier](https://laravel.com/docs/10.x/artisan#usage) nachlesen
-2. Erstelle eine Migration, um der Tabelle **tweets** einen [Foreign Key](https://laravel.com/docs/10.x/migrations#foreign-key-constraints) zu der Usertabelle hinzuzufügen
-
+2. Erstelle eine Migration, um der Tabelle **tweets** einen [Foreign Key](https://laravel.com/docs/10.x/migrations#foreign-key-constraints) zu der User-Tabelle hinzuzufügen
 
 
 ## Hashtags
