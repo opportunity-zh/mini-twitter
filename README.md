@@ -285,7 +285,7 @@ Mit Blade kannst Du Daten in der View auf einfache Weise darstellen. Dabei helfe
 Um korrekt mit Formularen umzugehen sind folgende Dinge wichtig:
 
 ### Form Tag
-Alle Inputfelder müssen sich **innerhalb eines Form-Tags** befinden.
+Alle Inputfelder müssen sich **innerhalb eines Form-Tags <form></form>** befinden.
 
 ### Action Attribut im Form Tag
 Hier wird bestimmt, an welche Route in Deiner Applikation die Formulardaten gesendet werden.
