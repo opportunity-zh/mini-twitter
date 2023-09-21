@@ -266,7 +266,7 @@ Auch hier bietet die von Laravel zur Verfügung gestellte Model Klasse einige Me
 
 
 ## Blade Template Engine (Views)
-Blade hilft Dir dabei, Daten in der View auf einfache Weise darzustellen. Dabei helfen die Blade Directives und die Mustache-Syntax.
+Mit Blade kannst Du Daten in der View auf einfache Weise darstellen. Dabei helfen die Blade Directives und die Mustache-Syntax.
 
 [Blade verwenden](https://laravel.com/docs/blade#displaying-data)
 
@@ -274,10 +274,13 @@ Blade hilft Dir dabei, Daten in der View auf einfache Weise darzustellen. Dabei 
 ## Formular Handling Basics
 Um korrekt mit Formularen umzugehen sind folgende Dinge wichtig:
 
-### Action Attribut
+### Form Tag
+Alle Inputfelder müssen sich **innerhalb eines Form-Tags** befinden.
+
+### Action Attribut im Form Tag
 Hier wird bestimmt, an welche Route in Deiner Applikation die Formulardaten gesendet werden.
 
-### Method Attribut
+### Method Attribut im Form Tag
 Bei Formularübertragungen ist es ratsam, dass die **POST** Methode verwendet wird.
 
 ### CSRF-Token
