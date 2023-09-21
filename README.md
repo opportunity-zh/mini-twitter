@@ -84,9 +84,9 @@ localhost
 ```
 
 ### 7. Vite verwenden
-Vite ist ein **Buildtool**, dass Dir dabei hilft, mit Frontendservices zu arbeiten. Laravel verwendet Vite automatisch, es muss nicht zusätzlich installiert werden.Mit vite können beispielsweise PostCSS oder SASS/SCSS nahtlos integriert werden.
+Vite ist ein **Buildtool**, dass Dir dabei hilft, mit Frontendservices zu arbeiten. Laravel verwendet Vite automatisch, es muss nicht zusätzlich installiert werden. Mit vite können beispielsweise PostCSS oder SASS/SCSS nahtlos integriert werden.
 
-Um Deine CSS Datei zu verlinken, kannst Du folgende Directive nutzen:  
+Um Deine CSS Datei zu verlinken, kannst Du folgende Directive in den **head-Tag** in Deinem HTML File kopieren:  
 ```html
 @vite('resources/css/app.css')
 ```
