@@ -91,6 +91,10 @@ Um Deine CSS Datei zu verlinken, kannst Du folgende Directive in den **head-Tag*
 @vite('resources/css/app.css')
 ```
 
+Weitere Features findest Du [hier](https://vitejs.dev/guide/features.html)
+
+
+
 
 
 ## Fehlerbehebungen
