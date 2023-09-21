@@ -107,9 +107,8 @@ body{
 ```
 5. Öffne Dein Projekt im Browser und schaue, ob der Hintergrund gelb ist
 
-  
 
-
+    
 #### 7.1 SASS/SCSS mit Vite verwenden
 SASS ist eine **Preprocessor** für CSS und ermöglicht es Dir diverse Funktionen zu integrieren, die Dir CSS nicht zur Verfügung stellt. Du kannst SASS folgendermassen in Deinem Projekt verwenden:
 
