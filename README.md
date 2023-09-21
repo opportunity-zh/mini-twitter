@@ -91,6 +91,21 @@ Um Deine CSS Datei zu verlinken, kannst Du folgende Directive in den **head-Tag*
 @vite('resources/css/app.css')
 ```
 
+#### SASS/SCSS mit Vite verwenden
+SASS ist eine **Preprocessor** für CSS und ermöglicht es Dir diverse Funktionen zu integrieren, die Dir CSS nicht zur Verfügung stellt. Du kannst SASS folgendermassen in Deinem Projekt verwenden:
+
+1. Navigiere mit dem Terminal in Dein Projekt
+2. Beende den Docker-Process
+```bash
+sail down
+```
+3. Installiere den SASS Compiler mit Hilfe von node.js
+```bash
+npm add -D sass
+```
+4. Öffne die Datei **vite.config.js**
+
+
 Weitere Features findest Du [hier](https://vitejs.dev/guide/features.html)
 
 
