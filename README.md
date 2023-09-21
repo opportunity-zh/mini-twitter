@@ -254,26 +254,40 @@ sail make:model Tweet
 ```
 
 ### Daten lesen
-Die Model Klasse bietet Dir verschiedene Möglichkeiten, die Daten aus der Daten zu holen. Du kannst entweder viele Daten oder eine einzelne Zeile aus der Datenbank laden. Hier findest Du mehr Informationen:  
+Die Model Klasse bietet Dir verschiedene Methoden, die Daten aus der Datenbank zu holen. Du kannst entweder viele Daten oder eine einzelne Zeile aus der Datenbank laden. Hier findest Du mehr Informationen:  
 
 [Single Row](https://laravel.com/docs/10.x/eloquent#retrieving-single-models)  
 
 
 ### Daten schreiben
-Auch hier bietet die von Laravel zur Verfügung gestellte Model Klasse einige Optionen an. Schau hier, was Du brauchst, um einen Eintrag in der Datenbank zu machen:  
+Auch hier bietet die von Laravel zur Verfügung gestellte Model Klasse einige Methoden an. Schau hier, was Du brauchst, um einen Eintrag in der Datenbank zu machen:  
 
-[Create Data](https://laravel.com/docs/10.x/eloquent#inserts)
-
-
-## Blade Template Engine
-Blade hilft Dir dabei, Daten, die vom Controller kommen einfacher darzustellen und in die View einzubetten.
-
-Dabei helfen die Blade Directives. De
+[Create Data](https://laravel.com/docs/eloquent#inserts)
 
 
+## Blade Template Engine (Views)
+Blade hilft Dir dabei, Daten in der View auf einfache Weise darzustellen. Dabei helfen die Blade Directives und die Mustache-Syntax.
+
+[Blade verwenden](https://laravel.com/docs/blade#displaying-data)
 
 
+## Formular Handling Basics
+Um korrekt mit Formularen umzugehen sind folgende Dinge wichtig:
 
+### Action Attribut
+Hier wird bestimmt, an welche Route in Deiner Applikation die Formulardaten gesendet werden.
+
+### Method Attribut
+Bei Formularübertragungen ist es ratsam, dass die **POST** Methode verwendet wird.
+
+### CSRF-Token
+Laravel bietet die automatische Sicherheitsfunktion mit einem CSRF-Token. Dieser **muss** mit **@csrf** im Formular integriert werden.
+
+### Inputfelder
+Alle Inputfelder müssen einen eindeutigen und uniquen Namen haben. Dieses Attribut fügst Du mit **name="xyz"** hinzu
+
+### Button
+Der Button muss vom Type Submit sein, sonst wird das Formular nicht abgeschickt. Das kann mit **type="submit"** definiert werden.
 
 
 ## PHP My Admin
