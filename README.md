@@ -91,7 +91,7 @@ Um Deine CSS Datei zu verlinken, kannst Du folgende Directive in den **head-Tag*
 @vite('resources/css/app.css')
 ```
 
-#### SASS/SCSS mit Vite verwenden
+#### 7.1 SASS/SCSS mit Vite verwenden
 SASS ist eine **Preprocessor** für CSS und ermöglicht es Dir diverse Funktionen zu integrieren, die Dir CSS nicht zur Verfügung stellt. Du kannst SASS folgendermassen in Deinem Projekt verwenden:
 
 1. Navigiere mit dem Terminal in Dein Projekt
@@ -103,7 +103,17 @@ sail down
 ```bash
 npm add -D sass
 ```
-4. Öffne die Datei **vite.config.js**
+4. Erstelle einen neuen Unterordner im Ordner recources und nenne ihn **scss**
+5. Füge eine Datei hinzu und nenne diese **app.scss**
+6. Öffne die Datei **vite.config.js** und ersetze die Zeile **input** mit folgender Zeile
+```js
+input: ['resources/css/app.css', 'resources/scss/app.scss', 'resources/js/app.js'],
+```
+7. Ändere das im head hinzugefügte Snippet in
+```html
+@vite('resources/css/app.css', 'resources/scss/app.scss')
+```
+
 
 
 Weitere Features findest Du [hier](https://vitejs.dev/guide/features.html)
