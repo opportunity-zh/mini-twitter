@@ -286,6 +286,15 @@ localhost:8080/
 2. Logge Dich ein. Du findest die Zugangsdaten in Deiner **.env** Datei unter **DB_USERNAME** und **DB_PASSWORD**
 
 
+# Zusatzaufgaben
+
+## Users
+1. Erstelle einen User in der User Tabelle. Nutze dazu **sail artisan tinker**. Wie Tinker funktioniert kannst Du [hier](https://laravel.com/docs/10.x/artisan#usage) nachlesen
+2. Erstelle eine Migration, um der Tabelle **tweets** einen [Foreign Key](https://laravel.com/docs/10.x/migrations#foreign-key-constraints) zu der Usertabelle hinzuzufügen
+
+
+
+## Hashtags
 
 
 
