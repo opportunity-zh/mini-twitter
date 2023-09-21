@@ -239,6 +239,12 @@ Mit folgendem Befehl, kannst Du Dir die Liste aller möglichen Befehle / Hilfest
 sail artisan list
 ```
 
+## Simple Debugging
+Es gibt verschiedene Möglichkeiten, Fehler in Deiner Applikation zu finden. Hier eine der einfachsten, die dem **console.log()** von Javascript entspricht:
+```php
+dd();
+```
+
 ## Model
 Das Model ist die Abbildung eines einzelnen Tweets in der Datenbank als PHP-Klasse / Objekt.
 
