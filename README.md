@@ -67,7 +67,6 @@ phpmyadmin:
         - sail
 ```
 
-
 ### 5. Projekt aufstarten
 1. Im VS-Code Terminal öffnen
 2. Folgenden Befehl kopieren und einfügen
@@ -147,7 +146,25 @@ npm run dev
 Weitere Features findest Du [hier](https://vitejs.dev/guide/features.html)
 
 
-
+### 8. Laravel Breeze installieren
+Breeze ist ein Laravel Starter-Kit, das Dir eine Loginfunktionalität zur Verfügung stellt. Wir verwenden Breeze mit Blade.
+1. Applikation stoppen
+```code
+sail down
+```
+2. Breeze installieren
+```bash
+php artisan breeze:install
+```
+3. Migriere
+```code
+php artisan migrate
+```
+4. NPM Packges installieren
+```bash
+npm install
+npm run dev
+```
 
 
 ## Fehlerbehebungen
