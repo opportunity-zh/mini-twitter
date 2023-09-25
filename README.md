@@ -147,7 +147,7 @@ Weitere Features findest Du [hier](https://vitejs.dev/guide/features.html)
 
 
 ### 8. Laravel Breeze installieren
-Breeze ist ein Laravel Starter-Kit, das Dir eine Loginfunktionalität zur Verfügung stellt. Wir verwenden Breeze mit Blade.
+Breeze ist ein Laravel Starter-Kit, das Dir eine Loginfunktionalität zur Verfügung stellt. Breeze kann mit verschiedenen FrontEnd Frameworks verwendet werden. Wir verwenden Breeze mit Blade.
 1. Applikation stoppen
 ```code
 sail down
@@ -165,6 +165,8 @@ php artisan migrate
 npm install
 npm run dev
 ```
+
+[Mehr lesen](https://laravel.com/docs/10.x/starter-kits#breeze-and-blade)
 
 
 ## Fehlerbehebungen
