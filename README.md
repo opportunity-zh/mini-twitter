@@ -73,7 +73,7 @@ phpmyadmin:
 ```bash
 ./vendor/bin/sail up
 ```
-3. Bei Error: Runterscrollen zum Punkt **Fehlerbehebungen**
+3. Bei Error hier klicken:[Fehlerbehebungen](#Fehlerbehebungen)
 
 
 ### 6. WebApp in Browser öffnen
