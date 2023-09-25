@@ -152,6 +152,10 @@ Breeze ist ein Laravel Starter-Kit, das Dir eine Loginfunktionalität zur Verfü
 ```code
 sail down
 ```
+2. Breeze herunterladen
+```bash
+composer require laravel/breeze --dev
+``
 2. Breeze installieren
 ```bash
 php artisan breeze:install
