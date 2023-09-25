@@ -168,70 +168,6 @@ npm run dev
 
 [Mehr lesen](https://laravel.com/docs/10.x/starter-kits#breeze-and-blade)
 
-
-## Fehlerbehebungen
-
-#### Docker daemon läuft nicht
-Docker wurde nicht aufgestartet. Dann folgenden Befehl im Terminal eingeben
-
-#### LÖSUNG
-```bash
-sudo systemctl start docker
-```
-
-
-#### Ports besetzt
-Wenn man mit Docker arbeitet, kann es vorkommen, dass gewisse Ports bereits von anderer Software besetzt ist.
-Damit diese Ports von Docker verwendet werden können, müssen sie von Dir als Entwickler **freigegeben** werden.
-
-
-```diff
-! Error starting userland proxy: listen tcp4 0.0.0.0:3306: bind: address already in use
-```
-Dieser Error sagt Dir, dass der Port **3306** bereits verwendet wird.
-
-
-```diff
-! Error starting userland proxy: listen tcp4 0.0.0.0:80: bind: address already in use
-```
-Dieser Error sagt Dir, dass der Port **80** bereits verwendet wird.  
-
-
-#### LÖSUNG
-Damit das Problem nicht mehr eintritt, musst Du die **Ports wieder freigeben**:
-1. Nachschauen, welcher Service auf den Port benutzt. Folgende Zeile ins Terminal kopieren und **PORT** durch die Portnummer ersetzen.
-```bash
-sudo netstat -laputen | grep ':PORT'
-```
-2. Dies gibt Dir eine "Tabelle" von Services aus, die den Port verwenden. An letzter Stelle steht dann etwas wie: **1010/mariadbd**
-3. Dies ist der Service inkl. seiner **PROCESS-ID** (in diesem Fall 1010), welcher den Port besetzt
-4. Diesen Service musst Du nun stoppen. Das machst Du mit folgendem Befehl (PROCESS-ID durch die Prozess ID ersetzen)
-```bash
-sudo kill PROCESS-ID
-```
-
-#### Found orphan containers
-Du erhältst den Fehler "Found orphan containers", weil mit dem Befehl docker-compose wurden container gefunden, die zu einem anderen Projekt mit demselben Namen gehören.
-
-```diff
-! WARN[0000] Found orphan containers ([first-laravel-phpmyadmin-1]) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up. 
-```
-#### LÖSUNG
-Kopiere folgenden Befehl in Dein Terminal
-```bash
-./vendor/bin/sail down --remove-orphans
-```
-
-#### Probleme mit Ordner-Permission
-Wenn Dein Projektordner ein rotes Schlösschen besitzt, wurde dieser als root User erstellt und nicht als Deinen User. Du hast deshalb keine Berechtigung Änderungen darin vorzunehmen. Damit Du diese Berechtigung erhältst, muss Du folgendes machen:
-
-#### LÖSUNG
-1. Öffne das Terminal und navigiere in den Projektordner
-2. Gib folgende Zeile ein, um die Permissions zu ändern
-```bash
-sudo chmod 777 -R .
-```
-
 ## Sail als Alias in .bashrc speichern
 Die .bashrc-Datei ist eine Skriptdatei, die ausgeführt wird, wenn sich ein Benutzer anmeldet. Die Datei selbst enthält eine Reihe von Konfigurationen für Terminalsessions.
 
@@ -248,6 +184,7 @@ alias sail='bash vendor/bin/sail'
 ```bash
 source ~/.bashrc
 ```
+
 
 ## Artisan Console
 Laravel hilft Dir als Entwickler in vielen Bereichen. Es bietet Dir eine CLI (Commanline Interface), damit Du gewisse Tasks schneller und einfacher ausführen kannst. Beispielsweise Projektdateien erzeugen, die Datenbank aufzubauen, usw.  
@@ -355,6 +292,70 @@ Setze das Design mit CSS um: [Figma-Link](https://www.figma.com/file/3AO216bDpII
 
 ## Hashtags
 
+
+
+# Fehlerbehebungen
+
+## Docker daemon läuft nicht
+Docker wurde nicht aufgestartet. Dann folgenden Befehl im Terminal eingeben
+
+### LÖSUNG
+```bash
+sudo systemctl start docker
+```
+
+
+## Ports besetzt
+Wenn man mit Docker arbeitet, kann es vorkommen, dass gewisse Ports bereits von anderer Software besetzt ist.
+Damit diese Ports von Docker verwendet werden können, müssen sie von Dir als Entwickler **freigegeben** werden.
+
+
+```diff
+! Error starting userland proxy: listen tcp4 0.0.0.0:3306: bind: address already in use
+```
+Dieser Error sagt Dir, dass der Port **3306** bereits verwendet wird.
+
+
+```diff
+! Error starting userland proxy: listen tcp4 0.0.0.0:80: bind: address already in use
+```
+Dieser Error sagt Dir, dass der Port **80** bereits verwendet wird.  
+
+
+### LÖSUNG
+Damit das Problem nicht mehr eintritt, musst Du die **Ports wieder freigeben**:
+1. Nachschauen, welcher Service auf den Port benutzt. Folgende Zeile ins Terminal kopieren und **PORT** durch die Portnummer ersetzen.
+```bash
+sudo netstat -laputen | grep ':PORT'
+```
+2. Dies gibt Dir eine "Tabelle" von Services aus, die den Port verwenden. An letzter Stelle steht dann etwas wie: **1010/mariadbd**
+3. Dies ist der Service inkl. seiner **PROCESS-ID** (in diesem Fall 1010), welcher den Port besetzt
+4. Diesen Service musst Du nun stoppen. Das machst Du mit folgendem Befehl (PROCESS-ID durch die Prozess ID ersetzen)
+```bash
+sudo kill PROCESS-ID
+```
+
+## Found orphan containers
+Du erhältst den Fehler "Found orphan containers", weil mit dem Befehl docker-compose wurden container gefunden, die zu einem anderen Projekt mit demselben Namen gehören.
+
+```diff
+! WARN[0000] Found orphan containers ([first-laravel-phpmyadmin-1]) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up. 
+```
+### LÖSUNG
+Kopiere folgenden Befehl in Dein Terminal
+```bash
+./vendor/bin/sail down --remove-orphans
+```
+
+## Probleme mit Ordner-Permission
+Wenn Dein Projektordner ein rotes Schlösschen besitzt, wurde dieser als root User erstellt und nicht als Deinen User. Du hast deshalb keine Berechtigung Änderungen darin vorzunehmen. Damit Du diese Berechtigung erhältst, muss Du folgendes machen:
+
+### LÖSUNG
+1. Öffne das Terminal und navigiere in den Projektordner
+2. Gib folgende Zeile ein, um die Permissions zu ändern
+```bash
+sudo chmod 777 -R .
+```
 
 
 
