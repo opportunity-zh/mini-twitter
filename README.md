@@ -220,7 +220,7 @@ Das Model ist die Abbildung eines einzelnen Tweets in der Datenbank als PHP-Klas
 
 Mit folgendem Befehl kannst Du ein Model erstellen:
 ```bash
-sail make:model Tweet
+sail artisan make:model Tweet
 ```
 
 ### Daten lesen
