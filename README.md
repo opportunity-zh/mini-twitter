@@ -303,19 +303,22 @@ Alle Inputfelder müssen einen eindeutigen (uniquen) Namen haben. Dieses Attribu
 Der Button muss vom Type Submit sein, sonst wird das Formular nicht abgeschickt. Das kann mit **type="submit"** definiert werden.
 
 ## Form Validation Basics
-Laravel bietet Dir einen Validator und die passende **Blade Directive** (@error()) zur Anzeige der Fehlermeldung an. Eine Validation dient dazu,
-dass keine leeren bzw. falschen Inhalte akzeptiert und in die Datenbank geschrieben werden.  
+Laravel bietet Dir einen **Validator** und die passende **Blade Directive** zur Anzeige von Fehlermeldungen an. Eine Validation dient dazu,
+dass **leeren bzw. falschen Inhalte** nicht akzeptiert und nicht in der Datenbank gespeichert werden.  
+
 Eine Validation funktioniert folgendermassen:
-1. Request mit den Daten kommt vom Formular
-2. Request trifft auf die **store** Methode im Controller
-3. Der Request wird überprüft (validiert)
+1. **Request** mit den Daten kommt vom Formular und trifft auf die **store** Methode im Controller
+3. Die Daten im Request werden überprüft (validiert)
 4. Sind die Daten korrekt, werden die Daten in der Datenbank gespeichert
-5. Sind die Daten nicht korrekt, speichert Laravel die geeignete Fehlermeldung in der Variabel **$message**
-6. Und sendet diese Fehlermeldung **automatisch an die View zurück**
-7. In der View kann dieser Fehler mit der Blade Directive **@error("NAME_DES_FELDES"){{$message}}@enderror** angezeigt werden
+5. Sind die Daten nicht korrekt, speichert Laravel die geeigneten Fehlermeldungen in der Variabel **$message**
+6. Und sendet diese Variabel **automatisch an die View zurück**
+7. In der View kann dieser Fehler dann mit der Blade Directive **@error()** angezeigt werden
+
+[Mehr lesen](https://laravel.com/docs/10.x/validation#quick-writing-the-validation-logic)
 
 
-## Success Messages
+## Success Messages. 
+Wenn ein Tweet erstellt wurde, soll das dem User mitgeteilt werden. Dazu verwenden wir sogenannte **Flashed Session Data**. 
 
 [Mehr lesen](https://laravel.com/docs/10.x/redirects#redirecting-with-flashed-session-data)
 
