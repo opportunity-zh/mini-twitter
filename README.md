@@ -272,13 +272,13 @@ Die Model Klasse bietet Dir verschiedene Methoden, die Daten aus der Datenbank z
 ### Daten schreiben
 Auch hier bietet die von Laravel zur Verfügung gestellte Model Klasse einige Methoden an. Schau hier, was Du brauchst, um einen Eintrag in der Datenbank zu machen:  
 
-[Create Data](https://laravel.com/docs/eloquent#inserts)
+[Mehr lesen](https://laravel.com/docs/eloquent#inserts)
 
 
 ## Blade Template Engine (Views)
 Mit Blade kannst Du Daten in der View auf einfache Weise darstellen. Dabei helfen die Blade Directives und die Mustache-Syntax.
 
-[Blade verwenden](https://laravel.com/docs/blade#displaying-data)
+[Mehr lesen](https://laravel.com/docs/blade#displaying-data)
 
 
 ## Formular Handling Basics
@@ -297,14 +297,27 @@ Bei Formularübertragungen ist es ratsam, dass die **POST** Methode verwendet wi
 Laravel bietet die automatische Sicherheitsfunktion mit einem CSRF-Token. Dieser **muss** mit **@csrf** im Formular integriert werden.
 
 ### Inputfelder
-Alle Inputfelder müssen einen eindeutigen und uniquen Namen haben. Dieses Attribut fügst Du mit **name="xyz"** hinzu
+Alle Inputfelder müssen einen eindeutigen (uniquen) Namen haben. Dieses Attribut fügst Du mit **name="xyz"** hinzu. Dies kannst Du Dir dann als Key für die Daten, die Du eingibst vorstellen.
 
 ### Button
 Der Button muss vom Type Submit sein, sonst wird das Formular nicht abgeschickt. Das kann mit **type="submit"** definiert werden.
 
+## Form Validation Basics
+Laravel bietet Dir einen Validator und die passende **Blade Directive** (@error()) zur Anzeige der Fehlermeldung an. Eine Validation dient dazu,
+dass keine leeren bzw. falschen Inhalte akzeptiert und in die Datenbank geschrieben werden.  
+Eine Validation funktioniert folgendermassen:
+1. Request mit den Daten kommt vom Formular
+2. Request trifft auf die **store** Methode im Controller
+3. Der Request wird überprüft (validiert)
+4. Sind die Daten korrekt, werden die Daten in der Datenbank gespeichert
+5. Sind die Daten nicht korrekt, speichert Laravel die geeignete Fehlermeldung in der Variabel **$message**
+6. Und sendet diese Fehlermeldung **automatisch an die View zurück**
+7. In der View kann dieser Fehler mit der Blade Directive **@error("NAME_DES_FELDES"){{$message}}@enderror** angezeigt werden
 
 
+## Success Messages
 
+[Mehr lesen](https://laravel.com/docs/10.x/redirects#redirecting-with-flashed-session-data)
 
 # Zusatzaufgaben
 
