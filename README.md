@@ -317,7 +317,7 @@ Eine Validation funktioniert folgendermassen:
 [Mehr lesen](https://laravel.com/docs/10.x/validation#quick-writing-the-validation-logic)
 
 
-## Success Messages. 
+## Success Messages
 Wenn ein Tweet erstellt wurde, soll das dem User mitgeteilt werden. Dazu verwenden wir sogenannte **Flashed Session Data**. 
 
 [Mehr lesen](https://laravel.com/docs/10.x/redirects#redirecting-with-flashed-session-data)
@@ -331,7 +331,7 @@ Setze das Design mit CSS um: [Figma-Link](https://www.figma.com/file/3AO216bDpII
 ## Users
 1. Erstelle einen User in der User Tabelle. Nutze dazu **sail artisan tinker**. Wie Tinker funktioniert kannst Du [hier](https://laravel.com/docs/10.x/artisan#usage) nachlesen
 2. Erstelle eine neue Migration, um der Tabelle **tweets** einen [Foreign Key](https://laravel.com/docs/10.x/migrations#foreign-key-constraints) zu der User-Tabelle hinzuzufügen
-3. Migriere die Migration
+3. Führe die Migration aus
 
 
 ## Hashtags
