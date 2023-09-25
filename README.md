@@ -266,7 +266,7 @@ sail make:model Tweet
 ### Daten lesen
 Die Model Klasse bietet Dir verschiedene Methoden, die Daten aus der Datenbank zu holen. Du kannst entweder viele Daten oder eine einzelne Zeile aus der Datenbank laden. Hier findest Du mehr Informationen:  
 
-[Single Row](https://laravel.com/docs/10.x/eloquent#retrieving-single-models)  
+[Mehr lesen](https://laravel.com/docs/10.x/eloquent#retrieving-single-models)  
 
 
 ### Daten schreiben
@@ -276,7 +276,7 @@ Auch hier bietet die von Laravel zur Verfügung gestellte Model Klasse einige Me
 
 
 ## Blade Template Engine (Views)
-Mit Blade kannst Du Daten in der View auf einfache Weise darstellen. Dabei helfen die Blade Directives und die Mustache-Syntax.
+Mit **Blade** kannst Du Daten in der View auf einfache Weise darstellen. Dabei helfen die Blade Directives, die Mustache-Syntax, das Layouting und die Components.
 
 [Mehr lesen](https://laravel.com/docs/blade#displaying-data)
 
@@ -304,7 +304,7 @@ Der Button muss vom Type Submit sein, sonst wird das Formular nicht abgeschickt.
 
 ## Form Validation Basics
 Laravel bietet Dir einen **Validator** und die passende **Blade Directive** zur Anzeige von Fehlermeldungen an. Eine Validation dient dazu,
-dass **leeren bzw. falschen Inhalte** nicht akzeptiert und nicht in der Datenbank gespeichert werden.  
+**leeren bzw. falschen Inhalte** zu erkennen.
 
 Eine Validation funktioniert folgendermassen:
 1. **Request** mit den Daten kommt vom Formular und trifft auf die **store** Methode im Controller
