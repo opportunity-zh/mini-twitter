@@ -296,7 +296,7 @@ Setze das Design mit CSS um: [Figma-Link](https://www.figma.com/file/3AO216bDpII
 ## Docker daemon läuft nicht
 Docker wurde nicht aufgestartet. Dann folgenden Befehl im Terminal eingeben
 
-### LÖSUNG
+### Lösung
 ```bash
 sudo systemctl start docker
 ```
@@ -319,7 +319,7 @@ Dieser Error sagt Dir, dass der Port **3306** bereits verwendet wird.
 Dieser Error sagt Dir, dass der Port **80** bereits verwendet wird.  
 
 
-### LÖSUNG
+### Lösung
 Damit das Problem nicht mehr eintritt, musst Du die **Ports wieder freigeben**:
 1. Nachschauen, welcher Service auf den Port benutzt. Folgende Zeile ins Terminal kopieren und **PORT** durch die Portnummer ersetzen.
 ```bash
@@ -338,7 +338,7 @@ Du erhältst den Fehler "Found orphan containers", weil mit dem Befehl docker-co
 ```diff
 ! WARN[0000] Found orphan containers ([first-laravel-phpmyadmin-1]) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up. 
 ```
-### LÖSUNG
+### Lösung
 Kopiere folgenden Befehl in Dein Terminal
 ```bash
 ./vendor/bin/sail down --remove-orphans
@@ -347,7 +347,7 @@ Kopiere folgenden Befehl in Dein Terminal
 ## Probleme mit Ordner-Permission
 Wenn Dein Projektordner ein rotes Schlösschen besitzt, wurde dieser als root User erstellt und nicht als Deinen User. Du hast deshalb keine Berechtigung Änderungen darin vorzunehmen. Damit Du diese Berechtigung erhältst, muss Du folgendes machen:
 
-### LÖSUNG
+### Lösung
 1. Öffne das Terminal und navigiere in den Projektordner
 2. Gib folgende Zeile ein, um die Permissions zu ändern
 ```bash
