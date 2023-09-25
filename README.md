@@ -142,35 +142,7 @@ body{
 npm run dev
 ```
 
-
 Weitere Features findest Du [hier](https://vitejs.dev/guide/features.html)
-
-
-### 8. Laravel Breeze installieren
-Breeze ist ein Laravel Starter-Kit, das Dir eine Loginfunktionalität zur Verfügung stellt. Breeze kann mit verschiedenen FrontEnd Frameworks verwendet werden. Wir verwenden Breeze mit Blade.
-1. Applikation stoppen
-```code
-sail down
-```
-2. Breeze herunterladen
-```bash
-composer require laravel/breeze --dev
-```
-2. Breeze installieren
-```bash
-php artisan breeze:install
-```
-3. Migriere
-```code
-php artisan migrate
-```
-4. NPM Packges installieren
-```bash
-npm install
-npm run dev
-```
-
-[Mehr lesen](https://laravel.com/docs/10.x/starter-kits#breeze-and-blade)
 
 ## Sail als Alias in .bashrc speichern
 Die .bashrc-Datei ist eine Skriptdatei, die ausgeführt wird, wenn sich ein Benutzer anmeldet. Die Datei selbst enthält eine Reihe von Konfigurationen für Terminalsessions.
