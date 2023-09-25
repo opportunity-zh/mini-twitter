@@ -290,9 +290,6 @@ Setze das Design mit CSS um: [Figma-Link](https://www.figma.com/file/3AO216bDpII
 3. Führe die Migration aus
 
 
-## Hashtags
-
-
 
 # Fehlerbehebungen
 
