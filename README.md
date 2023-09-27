@@ -210,6 +210,11 @@ Auch hier bietet die von Laravel zur Verfügung gestellte Model Klasse einige Me
 ## Blade Template Engine (Views)
 Mit **Blade** kannst Du Daten in der View auf einfache Weise darstellen. Dabei helfen die Blade Directives, die Mustache-Syntax, das Layouting und die Components.
 
+Mit diesem Befehl kannst Du ein View-File erstellen
+```bash
+sail make:view NameDerView
+```
+
 [Mehr lesen](https://laravel.com/docs/blade#displaying-data)
 
 
