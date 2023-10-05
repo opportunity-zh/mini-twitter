@@ -18,6 +18,7 @@ Laravel Mini Twitter Vorlage, zum vereinfachten Einstieg ins Projekt. Hier die w
 - [Sail als Alias in .bashrc speichern](#sail-als-alias-in-bashrc-speichern)
 - [Artisan Console](#artisan-console)
 - [PHP My Admin](#php-my-admin)
+- [Fehlerbehebungen](#fehlerbehebungen)
 
 
 
@@ -203,77 +204,6 @@ Es gibt verschiedene Möglichkeiten, Fehler in Deiner Applikation zu finden. Hie
 dd();
 ```
 
-## Model
-Das Model ist die Abbildung eines einzelnen Tweets in der Datenbank als PHP-Klasse / Objekt.
-
-Mit folgendem Befehl kannst Du ein Model erstellen:
-```bash
-sail artisan make:model Tweet
-```
-
-### Daten lesen
-Die Model Klasse bietet Dir verschiedene Methoden, die Daten aus der Datenbank zu holen. Du kannst entweder viele Daten oder eine einzelne Zeile aus der Datenbank laden. Hier findest Du mehr Informationen:  
-
-[Mehr lesen](https://laravel.com/docs/10.x/eloquent#retrieving-single-models)  
-
-
-### Daten schreiben
-Auch hier bietet die von Laravel zur Verfügung gestellte Model Klasse einige Methoden an. Schau hier, was Du brauchst, um einen Eintrag in der Datenbank zu machen:  
-
-[Mehr lesen](https://laravel.com/docs/eloquent#inserts)
-
-
-## Blade Template Engine (Views)
-Mit **Blade** kannst Du Daten in der View auf einfache Weise darstellen. Dabei helfen die Blade Directives, die Mustache-Syntax, das Layouting und die Components.
-
-Mit diesem Befehl kannst Du ein View-File erstellen
-```bash
-sail make:view NameDerView
-```
-
-[Mehr lesen](https://laravel.com/docs/blade#displaying-data)
-
-
-## Formular Handling Basics
-Um korrekt mit Formularen umzugehen sind folgende Dinge wichtig:
-
-### Form Tag
-Alle Inputfelder müssen sich **innerhalb eines Form-Tags <form></form>** befinden.
-
-### Action Attribut im Form Tag
-Hier wird bestimmt, an welche Route in Deiner Applikation die Formulardaten gesendet werden.
-
-### Method Attribut im Form Tag
-Bei Formularübertragungen ist es ratsam, dass die **POST** Methode verwendet wird.
-
-### CSRF-Token
-Laravel bietet die automatische Sicherheitsfunktion mit einem CSRF-Token. Dieser **muss** mit **@csrf** im Formular integriert werden.
-
-### Inputfelder
-Alle Inputfelder müssen einen eindeutigen (uniquen) Namen haben. Dieses Attribut fügst Du mit **name="xyz"** hinzu. Dies kannst Du Dir dann als Key für die Daten, die Du eingibst vorstellen.
-
-### Button
-Der Button muss vom Type Submit sein, sonst wird das Formular nicht abgeschickt. Das kann mit **type="submit"** definiert werden.
-
-## Form Validation Basics
-Laravel bietet Dir einen **Validator** und die passende **Blade Directive** zur Anzeige von Fehlermeldungen an. Eine Validation dient dazu,
-**leeren bzw. falschen Inhalte** zu erkennen.
-
-Eine Validation funktioniert folgendermassen:
-1. **Request** mit den Daten kommt vom Formular und trifft auf die **store** Methode im Controller
-3. Die Daten im Request werden überprüft (validiert)
-4. Sind die Daten korrekt, werden die Daten in der Datenbank gespeichert
-5. Sind die Daten nicht korrekt, speichert Laravel die geeigneten Fehlermeldungen in der Variabel **$message**
-6. Und sendet diese Variabel **automatisch an die View zurück**
-7. In der View kann dieser Fehler dann mit der Blade Directive **@error()** angezeigt werden
-
-[Mehr lesen](https://laravel.com/docs/10.x/validation#quick-writing-the-validation-logic)
-
-
-## Success Messages
-Wenn ein Tweet erstellt wurde, soll das dem User mitgeteilt werden. Dazu verwenden wir sogenannte **Flashed Session Data**. 
-
-[Mehr lesen](https://laravel.com/docs/10.x/redirects#redirecting-with-flashed-session-data)
 
 # Zusatzaufgaben
 
@@ -297,7 +227,6 @@ Docker wurde nicht aufgestartet. Dann folgenden Befehl im Terminal eingeben
 ```bash
 sudo systemctl start docker
 ```
-
 
 ## Ports besetzt
 Wenn man mit Docker arbeitet, kann es vorkommen, dass gewisse Ports bereits von anderer Software besetzt ist.
