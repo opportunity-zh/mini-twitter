@@ -188,7 +188,7 @@ sail artisan list
 ```
 
 ## PHP My Admin
-PHP My Admin ist ein GUI für die Datenbank. Es zeigt Dir gespeicherte Daten visuell an.
+PHP My Admin ist ein GUI für die Datenbank. Es zeigt Dir Deine gespeicherte Daten visuell an. In PHP My Admin kannst Du auch Daten erfassen oder entfernen. Zusätzlich lässt es Dich SQL Befehle ausführen.
 
 1. Öffne PHP My Admin im Browser, indem Du folgende Zeilen in die URL-Bar kopierst
 ```bash
