@@ -10,7 +10,14 @@ Laravel Mini Twitter Vorlage, zum vereinfachten Einstieg ins Projekt. Hier die w
     - [1. Framework herunterladen und in VS-Code öffnen](#1-framework-herunterladen-und-in-vs-code-öffnen)  
     - [2. VS-Code vorbereiten](#2-vs-code-vorbereiten)  
     - [3. Docker vorbereiten](#3-docker-vorbereiten)  
-    - [4. Projekt um PHP My Admin erweitern](4-projekt-um-php-my-admin-erweitern)  
+    - [4. Projekt um PHP My Admin erweitern](4-projekt-um-php-my-admin-erweitern)
+    - [5. Projekt aufstarten](#5-projekt-aufstarten)
+    - [6. WebApp in Browser öffnen](#6-webapp-in-browser-öffnen)
+    - [7. Vite verwenden](#7-vite-verwenden)
+          - [7.1 SCSS mit Vite verwenden](#71-sassscss-mit-vite-verwenden)
+- [Sail als Alias in .bashrc speichern](#sail-als-alias-in-bashrc-speichern)
+- [Artisan Console](#artisan-console)
+- [PHP My Admin](#php-my-admin)
 
 
 
