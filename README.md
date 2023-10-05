@@ -20,6 +20,7 @@ Laravel Mini Twitter Vorlage, zum vereinfachten Einstieg ins Projekt. Hier die w
 - [PHP My Admin](#php-my-admin)
 - [Fehlerbehebungen](#fehlerbehebungen)
   - [Docker daemon läuft nicht](#docker-daemon-läuft-nicht)
+  - [Ports besetzt](#ports-besetzt)
   - [Found Orphan Containers](#found-orphan-containers)
   - [Probleme mit Ordner Permissions](#probleme-mit-ordner-permission)
 
