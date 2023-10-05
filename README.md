@@ -19,6 +19,9 @@ Laravel Mini Twitter Vorlage, zum vereinfachten Einstieg ins Projekt. Hier die w
 - [Artisan Console](#artisan-console)
 - [PHP My Admin](#php-my-admin)
 - [Fehlerbehebungen](#fehlerbehebungen)
+  - [Docker daemon läuft nicht](#docker-daemon-läuft-nicht)
+  - [Found Orphan Containers](#found-orphan-containers)
+  - [Probleme mit Ordner Permissions](#probleme-mit-ordner-permission)
 
 
 
