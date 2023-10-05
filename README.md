@@ -7,10 +7,10 @@ Laravel Mini Twitter Vorlage, zum vereinfachten Einstieg ins Projekt. Hier die w
 
 ## Inhalt
 [Installation](#installation)
-    [1. Framework herunterladen und in VS-Code öffnen](#1-framework-herunterladen-und-in-vs-code-öffnen)
-    [2. VS-Code vorbereiten](#2-vs-code-vorbereiten)
-    [3. Docker vorbereiten](#3-docker-vorbereiten)
-    [4. Projekt um PHP My Admin erweitern](4-projekt-um-php-my-admin-erweitern)
+    [1. Framework herunterladen und in VS-Code öffnen](#1-framework-herunterladen-und-in-vs-code-öffnen)  
+    [2. VS-Code vorbereiten](#2-vs-code-vorbereiten)  
+    [3. Docker vorbereiten](#3-docker-vorbereiten)  
+    [4. Projekt um PHP My Admin erweitern](4-projekt-um-php-my-admin-erweitern)  
 
 
 
