@@ -66,6 +66,10 @@ docker stop <containerId1> <containerId2>
 ```bash
 docker stop $(docker ps -a -q) 
 ```
+5. Und dann noch entfernen
+```bash
+docker rm $(docker ps -a -q)
+```
 
 ### 4. Projekt um PHP My Admin erweitern
 1. Im Projekt das File **docker-compose.yml** öffnen
